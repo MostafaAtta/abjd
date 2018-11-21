@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.atta.abjd">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/abjd1"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/abjd1"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".login.LoginActivity" />
+        <activity
+            android:name=".Register.RegisterActivity"
+            android:parentActivityName=".login.LoginActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".main.MainActivity"></activity>
+    </application>
+
+</manifest>
